@@ -65,6 +65,7 @@ abstract class QuoteDB : RoomDatabase(){
          * Populate the database in a new coroutine.
          * If you want to start with more elements
          */
+
         suspend fun populate(quoteDao: QuoteDao) {
 
             quoteDao.deleteAll()

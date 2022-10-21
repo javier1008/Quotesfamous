@@ -18,5 +18,8 @@ class QuoteRepositoryImpl @Inject constructor (private val localDataSource: Quot
     override suspend fun getQuote(quoteId: Int): Flow<QuoteModel> {
         return localDataSource.getQuote(quoteId)
     }
+    override suspend fun addQuote(quote: QuoteModel){
+        return localDataSource.insert(quote)
+    }
 
 }
