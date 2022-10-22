@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quotesfamous">
         <activity
+            android:name=".presentation.view.AddQuoteActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.view.QuoteRandomActivity"
             android:exported="true">
             <intent-filter>
