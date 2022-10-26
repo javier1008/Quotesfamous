@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/quotesfamous/app/src/main/res/layout/activity_add_quote.xml" value="0.1984732824427481" />
         <entry key="..\:/quotesfamous/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/quotesfamous/app/src/main/res/layout/activity_quote_random.xml" value="0.20416666666666666" />
         <entry key="..\:/quotesfamous/app/src/main/res/layout/activity_quote_random.xml.xml" value="0.20416666666666666" />
+        <entry key="..\:/quotesfamous/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/quotesfamous/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
+        <entry key="..\:/quotesfamous/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
