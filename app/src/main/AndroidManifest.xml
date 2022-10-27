@@ -11,10 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quotesfamous">
         <activity
+            android:name=".presentation.view.QuoteRandomActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Quotesfamous.NoActionBar" />
+        <activity
             android:name=".presentation.view.AddQuoteActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.view.QuoteRandomActivity"
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Quotesfamous.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
