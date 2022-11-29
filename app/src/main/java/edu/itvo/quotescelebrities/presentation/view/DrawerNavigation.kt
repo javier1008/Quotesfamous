@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import edu.itvo.quotescelebrities.R
 import edu.itvo.quotescelebrities.databinding.ActivityDrawerNavigationBinding
-import edu.itvo.quotescelebrities.databinding.FragmentQuoteRandomBinding
+
 
 @AndroidEntryPoint
 class DrawerNavigation : AppCompatActivity() {

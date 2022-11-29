@@ -29,10 +29,10 @@ class QuoteListViewModel
     private val _stateLoading = MutableStateFlow<Boolean>(false)
     val isLoading : StateFlow<Boolean> = _stateLoading
 
-    fun  getQuotes() {
+    fun  getQuotes(token: String) {
         _stateLoading.value =true
         viewModelScope.launch(Dispatchers.IO) {
-            val quoteResponse = getQuotesUseCase.getQuotes().first()
+            val quoteResponse = getQuotesUseCase.getQuotes(token).first()
             quoteResponse.let{
                 _quotes.value =it!!
                 _stateLoading.value =false

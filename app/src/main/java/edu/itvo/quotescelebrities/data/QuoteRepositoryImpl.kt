@@ -32,11 +32,11 @@ class QuoteRepositoryImpl @Inject constructor
 
     */
 
-    override suspend fun getQuotes(): Flow<QuoteApiResponse?> {
+    override suspend fun getQuotes(token: String): Flow<QuoteApiResponse?> {
         val localQuotes=  localDataSource.getQuotes()
         val  remoteQuotes =
             try {
-                remoteDataSource.getQuotes()
+                remoteDataSource.getQuotes(token)
             } catch (ex: Exception) {
                 when (ex) {
                     is NetworkErrorException -> throw ex

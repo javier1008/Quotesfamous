@@ -30,6 +30,7 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
+    <string name="token_required">Token is required, please authenticate first</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

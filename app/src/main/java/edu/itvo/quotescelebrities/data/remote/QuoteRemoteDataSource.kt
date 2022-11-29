@@ -4,5 +4,5 @@ import kotlinx.coroutines.flow.Flow
 
 
 interface QuoteRemoteDataSource {
-    suspend fun getQuotes(): Flow<QuoteApiResponse>
+    suspend fun getQuotes(token: String): Flow<QuoteApiResponse>
 }

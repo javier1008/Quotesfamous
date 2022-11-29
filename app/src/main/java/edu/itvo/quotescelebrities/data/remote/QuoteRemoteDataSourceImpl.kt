@@ -7,9 +7,10 @@ import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
 class QuoteRemoteDataSourceImpl @Inject constructor(private  val api:QuoteApiInterface):QuoteRemoteDataSource {
-    override suspend fun getQuotes(): Flow<QuoteApiResponse> {
-        val jsonObj: JsonObject =  api.getQuotes()
+    override suspend fun getQuotes(token: String ): Flow<QuoteApiResponse> {
+        val jsonObj: JsonObject =  api.getQuotes(token)
         val quoteApiResponse = Gson().fromJson(jsonObj, QuoteApiResponse::class.java)
+
         return flow{emit(quoteApiResponse)}
     }
 }

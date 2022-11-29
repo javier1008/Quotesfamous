@@ -7,6 +7,6 @@ import javax.inject.Inject
 
 
 class GetQuotesUseCase @Inject constructor(private val quoteRepository: QuoteRepository) {
-    suspend fun getQuotes(): Flow<QuoteApiResponse?> = quoteRepository.getQuotes()
+    suspend fun getQuotes(token: String): Flow<QuoteApiResponse?> = quoteRepository.getQuotes(token)
 
 }
